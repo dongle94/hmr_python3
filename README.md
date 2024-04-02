@@ -7,22 +7,24 @@ CVPR 2018
 ![Teaser Image](https://akanazawa.github.io/hmr/resources/images/teaser.png)
 
 ### Requirements
-- Python 2.7
-- [TensorFlow](https://www.tensorflow.org/) tested on version 1.3, demo alone runs with TF 1.12
+- Python 3.7.x ~~Python 2.7~~
+  ```shell
+  $ conda create -n hmr python==3.7.16
+  $ conda activate hmr
+  ```
+- [TensorFlow](https://www.tensorflow.org/)
+  - I tested demo in TF 1.15.5 Version
+  - And it is included in `requirements.txt`
 
 ### Installation
 
 #### Linux Setup with virtualenv
-```
-virtualenv venv_hmr
-source venv_hmr/bin/activate
-pip install -U pip
-deactivate
-source venv_hmr/bin/activate
-pip install -r requirements.txt
+```shell
+$ pip install -r requirements.txt
 ```
 #### Install TensorFlow
 With GPU:
+- You need to install cuda 10.x(maybe 10.0)
 ```
 pip install tensorflow-gpu==1.3.0
 ```
