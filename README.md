@@ -19,7 +19,9 @@ CVPR 2018
 ### Installation
 
 #### Linux Setup with virtualenv
+Already`requirements.txt` have `numpy`, if you have error for `opendr`, first install `numpy`. 
 ```shell
+$ pip install numpy==1.18.5
 $ pip install -r requirements.txt
 ```
 #### Install TensorFlow
